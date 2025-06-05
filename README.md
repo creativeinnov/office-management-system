@@ -29,46 +29,46 @@ A beginner-friendly CRUD-based Office Management System built with Laravel and M
 Here's a high-level view of the folder structure and key files where code modifications or implementations are done:
 
 # office-management-system/
-│
-├── app/
-│ ├── Http/
-│ │ ├── Controllers/
-│ │ │ ├── CompanyController.php # CRUD logic for Companies
-│ │ │ └── EmployeeController.php # CRUD logic for Employees
+
+├── app/ <br>
+│ ├── Http/ <br>
+│ │ ├── Controllers/ <br>
+│ │ │ ├── CompanyController.php # CRUD logic for Companies <br>
+│ │ │ └── EmployeeController.php # CRUD logic for Employees <br>
 │ │
-│ └── Models/
-│ ├── Company.php # Company model
-│ └── Employee.php # Employee model
+│ └── Models/ <br>
+│ ├── Company.php # Company model <br>
+│ └── Employee.php # Employee model <br>
 │
-├── database/
-│ └── migrations/
-│ ├── create_companies_table.php # DB schema for companies
-│ └── create_employees_table.php # DB schema for employees
+├── database/ <br>
+│ └── migrations/ <br>
+│ ├── create_companies_table.php # DB schema for companies <br>
+│ └── create_employees_table.php # DB schema for employees <br>
 │
-├── resources/
-│ └── views/
-│ ├── companies/
-│ │ ├── index.blade.php # Company list view
-│ │ ├── create.blade.php # Company create form
-│ │ └── edit.blade.php # Company edit form
+├── resources/ <br>
+│ └── views/ <br>
+│ ├── companies/ <br>
+│ │ ├── index.blade.php # Company list view <br>
+│ │ ├── create.blade.php # Company create form <br>
+│ │ └── edit.blade.php # Company edit form <br>
 │ │
-│ ├── employees/
-│ │ ├── index.blade.php # Employee list view
-│ │ ├── create.blade.php # Employee create form
-│ │ └── edit.blade.php # Employee edit form
+│ ├── employees/ <br>
+│ │ ├── index.blade.php # Employee list view <br>
+│ │ ├── create.blade.php # Employee create form <br>
+│ │ └── edit.blade.php # Employee edit form <br>
 │ │
-│ └── layouts/
-│ └── app.blade.php # Common layout
+│ └── layouts/ <br>
+│ └── app.blade.php # Common layout <br>
 │
-├── routes/
-│ └── web.php # Route definitions
+├── routes/ <br>
+│ └── web.php # Route definitions <br>
 │
-├── public/
-│ └── css/, js/, images/ # Static assets
+├── public/ <br>
+│ └── css/, js/, images/ # Static assets <br>
 │
-├── .env # Your local environment config
-├── composer.json # PHP dependencies
-└── README.md # Project documentation (this file)
+├── .env # Your local environment config <br>
+├── composer.json # PHP dependencies <br>
+└── README.md # Project documentation (this file) <br>
 
 ## 🛠️ Setup Instructions
 
@@ -78,10 +78,10 @@ Here's a high-level view of the folder structure and key files where code modifi
 -git clone https://github.com/YOUR-USERNAME/office-management-system.git
 -cd office-management-system
 
-# install php dependencies
+### 2. Install php dependencies
 composer install
 
-# Configure .env for MySQL
+### 3.Configure .env for MySQL
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -89,10 +89,10 @@ DB_DATABASE=your_db_name
 DB_USERNAME=your_db_user
 DB_PASSWORD=your_db_pass
 
-# migrate database
+### 4.Migrate database
 php artisan migrate
 
-# run application
+### 5.Run application
 php artisan serve
 http://localhost:8000
 http://localhost:8000/dashboard
